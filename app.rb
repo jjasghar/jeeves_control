@@ -14,19 +14,19 @@ end
 
 get '/restart' do
   `docker restart docker-lita-pa7`
-  erb :index
+  redirect '/'
 end
 
 
 get '/start' do
   `docker start docker-lita-pa7`
-  erb :index
+  redirect '/'
 end
 
 
 get '/stop' do
   `docker stop docker-lita-pa7`
-  erb :index
+  redirect '/'
 end
 
 helpers do
