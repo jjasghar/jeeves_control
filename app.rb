@@ -13,19 +13,19 @@ get '/' do
 end
 
 get '/restart' do
-  `docker restart docker-lita-pa7`
+  `docker restart jeeves-pa7`
   redirect '/'
 end
 
 
 get '/start' do
-  `docker start docker-lita-pa7`
+  `docker start jeeves-pa7`
   redirect '/'
 end
 
 
 get '/stop' do
-  `docker stop docker-lita-pa7`
+  `docker stop jeeves-pa7`
   redirect '/'
 end
 
